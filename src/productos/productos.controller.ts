@@ -4,7 +4,7 @@ import { CreateProductoDto } from '../dto/create-producto.dto'; // Importa el DT
 import { UpdateProductoDto } from '../dto/update-producto.dto'; // Importa el DTO de actualización de productos
 import { Producto } from '../schemas/producto.schema'; // Importa el esquema de productos
 
-@Controller('productos') // Cambia la ruta a '/productos'
+@Controller('productos') 
 export class ProductosController {
   constructor(private readonly productosService: ProductosService) {}
 
