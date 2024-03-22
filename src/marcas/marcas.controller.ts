@@ -18,7 +18,7 @@ export class MarcasController {
     return this.marcasService.create(createMarcaDto);
   }
 
-  @Get(':id') // Agrega esta ruta para obtener una marca por su ID
+  @Get(':id') // Agrego esta ruta para obtener una marca por su ID
   async findOne(@Param('id') id: string) {
     const marca = await this.marcasService.findOne(id);
     if (!marca) {
