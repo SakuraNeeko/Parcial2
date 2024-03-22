@@ -4,7 +4,7 @@ import { CreateMarcaDto } from '../dto/create-marca.dto'; // Importa el DTO para
 import { UpdateMarcaDto } from '../dto/update-marca.dto'; // Importa el DTO para actualizar una marca
 import { Marca } from '../schemas/marca.schema'; // Importa el esquema de marcas
 
-@Controller('marcas') // Cambia la ruta a '/marcas'
+@Controller('marcas')
 export class MarcasController {
   constructor(private readonly marcasService: MarcasService) {}
 
