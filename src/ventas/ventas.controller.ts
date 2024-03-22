@@ -1,4 +1,3 @@
-// ventas.controller.ts
 import { Controller, Get, Post, Put, Delete, Body, Param, NotFoundException } from '@nestjs/common';
 import { VentasService } from './ventas.service';
 import { CreateVentaDto } from '../dto/create-venta.dto';
