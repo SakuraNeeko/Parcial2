@@ -1,11 +1,7 @@
 import { IsNotEmpty, IsString } from 'class-validator';
 
-export class CreateIngredienteDto {
+export class CreateMarcaDto {
   @IsNotEmpty()
   @IsString()
   nombre: string;
-
-  @IsNotEmpty()
-  @IsString()
-  proveedorId: string;
 }

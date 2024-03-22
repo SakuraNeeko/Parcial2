@@ -1,9 +1,13 @@
 import { IsNotEmpty, IsDateString, IsMongoId } from 'class-validator';
 
-export class CreateOrdenDto {
+export class CreateVentaDto {
   @IsNotEmpty()
   @IsMongoId()
-  plato: string;
+  producto: string;
+
+  @IsNotEmpty()
+  @IsMongoId()
+  cliente: string;
 
   @IsDateString()
   fecha: Date;

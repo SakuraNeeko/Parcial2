@@ -2,9 +2,12 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 @Schema()
-export class Plato extends Document {
+export class Cliente extends Document {
   @Prop({ required: true })
   nombre: string;
+
+  @Prop({ required: true })
+  cedula: string;
 }
 
-export const PlatoSchema = SchemaFactory.createForClass(Plato);
+export const ClienteSchema = SchemaFactory.createForClass(Cliente);

@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { PlatosModule } from './platos/platos.module'; // Importa el módulo de Platos
-import { IngredientesModule } from './ingredientes/ingredientes.module'; // Importa el módulo de Ingredientes
-import { ProveedoresModule } from './proveedores/proveedores.module'; // Importa el módulo de Proveedores
-import { OrdenesModule } from './ordenes/ordenes.module'; // Importa el módulo de Ordenes
+import { MarcasModule } from './marcas/marcas.module'; // Importa el módulo de Platos
+import { ProductosModule } from './productos/productos.module'; // Importa el módulo de Ingredientes
+import { ClientesModule } from './clientes/clientes.module'; // Importa el módulo de Proveedores
+import { VentasModule } from './ventas/ventas.module'; // Importa el módulo de Ordenes
 import { AuthService } from './auth/auth.service';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './auth/jwt.strategy';
@@ -14,10 +14,10 @@ import { JwtStrategy } from './auth/jwt.strategy';
     JwtModule.register({
       signOptions: { expiresIn: '24h' },
     }),
-    PlatosModule, // Agrega el módulo de Platos
-    IngredientesModule, // Agrega el módulo de Ingredientes
-    ProveedoresModule, // Agrega el módulo de Proveedores
-    OrdenesModule, // Agrega el módulo de Ordenes
+    MarcasModule, // Agrega el módulo de Platos
+    ProductosModule, // Agrega el módulo de Ingredientes
+    ClientesModule, // Agrega el módulo de Proveedores
+    VentasModule, // Agrega el módulo de Ordenes
   ],
   controllers: [],
   providers: [AuthService, JwtStrategy],
